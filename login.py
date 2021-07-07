@@ -1,6 +1,6 @@
 from user_datastore import create_users
 
-# list of ATM users
+#list of ATM users
 user_list = create_users()
 
 
@@ -20,14 +20,14 @@ def verify_user(user_id, pin):
 
     for user in user_list:
 
-        # does the user_id match a user id in the dictionary
+        #does ID match dictionary
         if(user['User ID'] == user_id):
 
             if(user['PIN Code'] == pin):
-                # Success!                
-                return user # as a dictionary
+                              
+                return user 
 
-    return None # None is like null in C#
+    return None
 
 
 def welcome_user(active_user):
