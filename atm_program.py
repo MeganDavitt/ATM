@@ -90,7 +90,7 @@ def make_withdrawal(active_user, amount):
 
 def changePin(user, newPIN):
     user["PIN Code"] = newPIN
-    print("Your PIN number has been changed")
+    print("Your PIN number has been changed successfully!")
     
 def print_service_call(user):
     print(f'Hello User: {user["User ID"]} if you would like to speak to a member of our team please call: 01-555-123')
